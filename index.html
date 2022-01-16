@@ -67,7 +67,7 @@
       <section class="hero">
           <div class=" hero-container">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button class="hero-button" type="button">Заказать услугу</button> 
+            <button class="hero-button" type="button" data-modal-open>Заказать услугу</button> 
           </div>
       </section>
       <section class="adv">
@@ -128,17 +128,24 @@
             <h2 class=" title works-title">Чем мы занимаемся</h2>
          
          <ul class="list works-list">
-             <li class="works-list-item" > 
-               <a class="link" href=""><img src="images/what1.jpg" alt="человек пишет код" width="370" height="294"></a> 
-             </li>
+                <li class="works-list-item" > 
+                <a class="link" href=""><img src="images/what1.jpg" alt="человек пишет код" width="370" height="294">
+                </a> 
+                <p class="works-list-text">Десктопные приложения</p>
+                </li>
+                <li class="works-list-item"> 
+                <a class="link" href=""><img src="images/what2.jpg" alt="человек смотрит на макет" width="370" height="294">
+                </a>
+                <p class="works-list-text">Мобильные приложения</p>
+                </li>
              <li class="works-list-item"> 
-               <a class="link" href=""><img src="images/what2.jpg" alt="человек смотрит на макет" width="370" height="294"></a>
-             </li>
-             <li class="works-list-item"> 
-               <a class="link" href=""><img src="images/what3.jpg" alt="человек смотрит на палитру" width="370" height="294"></a> 
+               <a class="link" href=""><img src="images/what3.jpg" alt="человек смотрит на палитру" width="370" height="294">
+             </a> 
+             <p class="works-list-text">Дизайнерские решения</p>
              </li>
             
         </ul>
+        
         </div>
      </section> 
      <section class="team">
@@ -425,6 +432,19 @@
 
 
     </footer>
+
+    <div class="backdrop" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close" data-modal-close ="">
+            <svg class="close-icon" >
+                <use href=images/symbol-defs.svg#icon-close-black-18dp-2-1>
+                </use>
+            </svg>
+            </button>
+
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
   
 </body>
 </html>
